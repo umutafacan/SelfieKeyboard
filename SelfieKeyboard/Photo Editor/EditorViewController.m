@@ -65,16 +65,16 @@
     
     [_buttonEdit setHidden:YES];
     
-    NSString *theImagePath ;
+    NSString *name ;
     if ([[[NSUserDefaults standardUserDefaults] dictionaryRepresentation].allKeys containsObject:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,_photoID]]) {
         // unarchive the value here
-        theImagePath= [[NSUserDefaults standardUserDefaults] rm_customObjectForKey:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,_photoID]];
+        name= [[NSUserDefaults standardUserDefaults] rm_customObjectForKey:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,_photoID]];
     }
    
-
     
-    if (  theImagePath  ) {
-        UIImage *buttonImage = [UIImage imageWithContentsOfFile:theImagePath];
+    
+    if (  name  ) {
+        UIImage *buttonImage = [self loadImage:name];
          myImageView.contentMode = UIViewContentModeCenter;
         myImageView.image = buttonImage;
         [self addGestureRecognizer];
@@ -82,6 +82,17 @@
     
     
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (UIImage*)loadImage:(NSString *)name
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* path = [documentsDirectory stringByAppendingPathComponent:
+                      name];
+    UIImage* image = [UIImage imageWithContentsOfFile:path];
+    return image;
 }
 
 - (void)viewDidUnload
@@ -221,11 +232,12 @@
     NSData *imageData = UIImagePNGRepresentation([self visibleImage]);
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
-    NSString *imagePath =[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%@.png",imageName]];
+    NSString *imagePath =[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
     
-    [[NSUserDefaults standardUserDefaults] rm_setCustomObject:imagePath forKey:imageName];
+    [[NSUserDefaults standardUserDefaults] rm_setCustomObject:[NSString stringWithFormat:@"%@.png",imageName] forKey:imageName];
 
     
 

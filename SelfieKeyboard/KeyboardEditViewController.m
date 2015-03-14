@@ -33,7 +33,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (UIImage*)loadImage:(NSString *)name
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* path = [documentsDirectory stringByAppendingPathComponent:
+                      [NSString stringWithString:name] ];
+    UIImage* image = [UIImage imageWithContentsOfFile:path];
+    return image;
+}
 #pragma mark - Collection View Delegates
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -44,18 +53,16 @@
     myCell.indexPath = indexPath;
     myCell.delegate=self;
     
-    NSString *theImagePath ;
+    NSString *name ;
     if ([[[NSUserDefaults standardUserDefaults] dictionaryRepresentation].allKeys containsObject:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,(int)indexPath.row]]) {
         // unarchive the value here
-       theImagePath= [[NSUserDefaults standardUserDefaults] rm_customObjectForKey:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,(int)indexPath.row]];
+       name= [[NSUserDefaults standardUserDefaults] rm_customObjectForKey:[NSString stringWithFormat:@"Keyboard_%d_image%d",_keyboardID,(int)indexPath.row]];
     }
+   
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-    NSString *cache = [paths objectAtIndex:0];
-    NSString *fullPath = [NSString stringWithFormat:@"%@/%@", cache, theImagePath];
-     if (  theImagePath  ) {
-    UIImage *buttonImage = [UIImage imageWithContentsOfFile:fullPath];
-
+ 
+     if (  name  ) {
+    UIImage *buttonImage = [self loadImage:name];
    
         [myCell.imageView setImage:buttonImage];
     }
