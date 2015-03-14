@@ -242,6 +242,16 @@ static IQLabelView *lastTouchedView;
     _textView.font = [UIFont fontWithName:_fontName size:_fontSize];
 }
 
+
+#pragma mark - TextField Delegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+
+    [self hideEditingHandles];
+    [self.superview bringSubviewToFront:self];
+    return YES;
+}
+
 #pragma mark - Bounds
 
 - (void)hideEditingHandles

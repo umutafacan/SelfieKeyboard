@@ -99,8 +99,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z9w-Xf-rvc">
-                                <rect key="frame" x="0.0" y="371" width="320" height="164"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z9w-Xf-rvc">
+                                <rect key="frame" x="0.0" y="404" width="320" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="1i9-s4-Xbg"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="1hh-XP-daJ">
                                     <size key="itemSize" width="70" height="70"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -155,6 +158,11 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z9w-Xf-rvc" firstAttribute="leading" secondItem="4Rw-sO-44R" secondAttribute="leading" id="9ge-Kz-I1C"/>
+                            <constraint firstAttribute="trailing" secondItem="z9w-Xf-rvc" secondAttribute="trailing" id="YqD-Qy-8gv"/>
+                            <constraint firstItem="c9A-Nl-jbw" firstAttribute="top" secondItem="z9w-Xf-rvc" secondAttribute="bottom" id="yuF-HX-Axh"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>

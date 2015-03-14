@@ -29,7 +29,7 @@
 
 
 
-@interface EditorViewController () <GKImagePickerDelegate,UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface EditorViewController () <GKImagePickerDelegate,UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate> {
     IBOutlet UIImageView *myImageView;
     GKImagePicker *picker;
     IQLabelView *currentlyEditingLabel;
@@ -167,6 +167,8 @@
     [aLabel setText:@""];
     [aLabel setTextColor:_selectedColor];
     [aLabel sizeToFit];
+    [aLabel setReturnKeyType:UIReturnKeyDone];
+    aLabel.delegate=self;
     
     IQLabelView *labelView = [[IQLabelView alloc] initWithFrame:labelFrame];
     [labelView setAutoresizingMask:(UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth)];
@@ -283,6 +285,7 @@
 
 }
 
+
 - (void)labelViewDidClose:(IQLabelView *)label
 {
     // some actions after delete label
@@ -312,6 +315,16 @@
 {
     // tap in text field and keyboard showing
     currentlyEditingLabel = label;
+}
+
+
+#pragma  mark - TextField Delegate 
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqual:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
 }
 
 #pragma  mark - Color Picker 
