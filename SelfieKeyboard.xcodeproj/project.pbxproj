@@ -14,6 +14,27 @@
 		4C0BBB4C1AA4F51C00BADD6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BBB4B1AA4F51C00BADD6B /* Images.xcassets */; };
 		4C0BBB4F1AA4F51C00BADD6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BBB4D1AA4F51C00BADD6B /* LaunchScreen.xib */; };
 		4C0BBB5B1AA4F51C00BADD6B /* SelfieKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BBB5A1AA4F51C00BADD6B /* SelfieKeyboardTests.m */; };
+		4C0BBB661AA4FDD000BADD6B /* keyboardListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BBB651AA4FDD000BADD6B /* keyboardListViewController.m */; };
+		4C80E6BB1AB2434A009B67A5 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C80E6BA1AB2434A009B67A5 /* Singleton.m */; };
+		4C80E6BF1AB25003009B67A5 /* KeyboardEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C80E6BE1AB25003009B67A5 /* KeyboardEditViewController.m */; };
+		4CD0E0DA1AB31FC600AFA7F8 /* KeyboardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0D91AB31FC600AFA7F8 /* KeyboardCollectionViewCell.m */; };
+		4CD0E0E71AB44CF000AFA7F8 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0DD1AB44CF000AFA7F8 /* EditorViewController.m */; };
+		4CD0E0E81AB44CF000AFA7F8 /* EditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0E0DE1AB44CF000AFA7F8 /* EditorViewController.xib */; };
+		4CD0E0EA1AB44CF000AFA7F8 /* IQLabelView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CD0E0E21AB44CF000AFA7F8 /* IQLabelView.bundle */; };
+		4CD0E0EB1AB44CF000AFA7F8 /* IQLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0E41AB44CF000AFA7F8 /* IQLabelView.m */; };
+		4CD0E0EC1AB44CF000AFA7F8 /* UITextField+DynamicFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0E61AB44CF000AFA7F8 /* UITextField+DynamicFontSize.m */; };
+		4CD0E0FD1AB44D3A00AFA7F8 /* GKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0EF1AB44D3A00AFA7F8 /* GKImageCropper.m */; };
+		4CD0E0FE1AB44D3A00AFA7F8 /* GKImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0F11AB44D3A00AFA7F8 /* GKImagePicker.m */; };
+		4CD0E0FF1AB44D3A00AFA7F8 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0F41AB44D3A00AFA7F8 /* UIImage+Alpha.m */; };
+		4CD0E1001AB44D3A00AFA7F8 /* UIImage+FixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0F61AB44D3A00AFA7F8 /* UIImage+FixOrientation.m */; };
+		4CD0E1011AB44D3A00AFA7F8 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0F81AB44D3A00AFA7F8 /* UIImage+Resize.m */; };
+		4CD0E1021AB44D3A00AFA7F8 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0FA1AB44D3A00AFA7F8 /* UIImage+Rotate.m */; };
+		4CD0E1031AB44D3A00AFA7F8 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E0FC1AB44D3A00AFA7F8 /* UIImage+RoundedCorner.m */; };
+		4CD0E1071AB4D12F00AFA7F8 /* KeyboardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E1061AB4D12F00AFA7F8 /* KeyboardModel.m */; };
+		4CD0E1111AB4D6DE00AFA7F8 /* NSObject+RMArchivable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E10A1AB4D6DE00AFA7F8 /* NSObject+RMArchivable.m */; };
+		4CD0E1121AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E10C1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m */; };
+		4CD0E1131AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E10E1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m */; };
+		4CD0E1141AB4D6DE00AFA7F8 /* RMMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E1101AB4D6DE00AFA7F8 /* RMMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +61,47 @@
 		4C0BBB541AA4F51C00BADD6B /* SelfieKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelfieKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0BBB591AA4F51C00BADD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0BBB5A1AA4F51C00BADD6B /* SelfieKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfieKeyboardTests.m; sourceTree = "<group>"; };
+		4C0BBB641AA4FDD000BADD6B /* keyboardListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboardListViewController.h; sourceTree = "<group>"; };
+		4C0BBB651AA4FDD000BADD6B /* keyboardListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyboardListViewController.m; sourceTree = "<group>"; };
+		4C80E6B91AB2434A009B67A5 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		4C80E6BA1AB2434A009B67A5 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		4C80E6BC1AB245B3009B67A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		4C80E6BD1AB25003009B67A5 /* KeyboardEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardEditViewController.h; sourceTree = "<group>"; };
+		4C80E6BE1AB25003009B67A5 /* KeyboardEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardEditViewController.m; sourceTree = "<group>"; };
+		4CD0E0D81AB31FC600AFA7F8 /* KeyboardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardCollectionViewCell.h; sourceTree = "<group>"; };
+		4CD0E0D91AB31FC600AFA7F8 /* KeyboardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardCollectionViewCell.m; sourceTree = "<group>"; };
+		4CD0E0DC1AB44CF000AFA7F8 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		4CD0E0DD1AB44CF000AFA7F8 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		4CD0E0DE1AB44CF000AFA7F8 /* EditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditorViewController.xib; sourceTree = "<group>"; };
+		4CD0E0E21AB44CF000AFA7F8 /* IQLabelView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQLabelView.bundle; sourceTree = "<group>"; };
+		4CD0E0E31AB44CF000AFA7F8 /* IQLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQLabelView.h; sourceTree = "<group>"; };
+		4CD0E0E41AB44CF000AFA7F8 /* IQLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQLabelView.m; sourceTree = "<group>"; };
+		4CD0E0E51AB44CF000AFA7F8 /* UITextField+DynamicFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DynamicFontSize.h"; sourceTree = "<group>"; };
+		4CD0E0E61AB44CF000AFA7F8 /* UITextField+DynamicFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DynamicFontSize.m"; sourceTree = "<group>"; };
+		4CD0E0EE1AB44D3A00AFA7F8 /* GKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropper.h; sourceTree = "<group>"; };
+		4CD0E0EF1AB44D3A00AFA7F8 /* GKImageCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropper.m; sourceTree = "<group>"; };
+		4CD0E0F01AB44D3A00AFA7F8 /* GKImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImagePicker.h; sourceTree = "<group>"; };
+		4CD0E0F11AB44D3A00AFA7F8 /* GKImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImagePicker.m; sourceTree = "<group>"; };
+		4CD0E0F31AB44D3A00AFA7F8 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		4CD0E0F41AB44D3A00AFA7F8 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		4CD0E0F51AB44D3A00AFA7F8 /* UIImage+FixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FixOrientation.h"; sourceTree = "<group>"; };
+		4CD0E0F61AB44D3A00AFA7F8 /* UIImage+FixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FixOrientation.m"; sourceTree = "<group>"; };
+		4CD0E0F71AB44D3A00AFA7F8 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		4CD0E0F81AB44D3A00AFA7F8 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		4CD0E0F91AB44D3A00AFA7F8 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		4CD0E0FA1AB44D3A00AFA7F8 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		4CD0E0FB1AB44D3A00AFA7F8 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		4CD0E0FC1AB44D3A00AFA7F8 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		4CD0E1051AB4D12F00AFA7F8 /* KeyboardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardModel.h; sourceTree = "<group>"; };
+		4CD0E1061AB4D12F00AFA7F8 /* KeyboardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardModel.m; sourceTree = "<group>"; };
+		4CD0E1091AB4D6DE00AFA7F8 /* NSObject+RMArchivable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RMArchivable.h"; sourceTree = "<group>"; };
+		4CD0E10A1AB4D6DE00AFA7F8 /* NSObject+RMArchivable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RMArchivable.m"; sourceTree = "<group>"; };
+		4CD0E10B1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RMCopyable.h"; sourceTree = "<group>"; };
+		4CD0E10C1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RMCopyable.m"; sourceTree = "<group>"; };
+		4CD0E10D1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+RMSaveCustomObject.h"; sourceTree = "<group>"; };
+		4CD0E10E1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RMSaveCustomObject.m"; sourceTree = "<group>"; };
+		4CD0E10F1AB4D6DE00AFA7F8 /* RMMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapper.h; sourceTree = "<group>"; };
+		4CD0E1101AB4D6DE00AFA7F8 /* RMMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +143,8 @@
 		4C0BBB3D1AA4F51C00BADD6B /* SelfieKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4CD0E1081AB4D6DE00AFA7F8 /* RMMapper */,
+				4CD0E1041AB4D11100AFA7F8 /* Models */,
 				4C0BBB421AA4F51C00BADD6B /* AppDelegate.h */,
 				4C0BBB431AA4F51C00BADD6B /* AppDelegate.m */,
 				4C0BBB451AA4F51C00BADD6B /* ViewController.h */,
@@ -89,6 +153,15 @@
 				4C0BBB4B1AA4F51C00BADD6B /* Images.xcassets */,
 				4C0BBB4D1AA4F51C00BADD6B /* LaunchScreen.xib */,
 				4C0BBB3E1AA4F51C00BADD6B /* Supporting Files */,
+				4C0BBB641AA4FDD000BADD6B /* keyboardListViewController.h */,
+				4C0BBB651AA4FDD000BADD6B /* keyboardListViewController.m */,
+				4C80E6B91AB2434A009B67A5 /* Singleton.h */,
+				4C80E6BA1AB2434A009B67A5 /* Singleton.m */,
+				4C80E6BD1AB25003009B67A5 /* KeyboardEditViewController.h */,
+				4C80E6BE1AB25003009B67A5 /* KeyboardEditViewController.m */,
+				4CD0E0D81AB31FC600AFA7F8 /* KeyboardCollectionViewCell.h */,
+				4CD0E0D91AB31FC600AFA7F8 /* KeyboardCollectionViewCell.m */,
+				4CD0E0DB1AB44CF000AFA7F8 /* Photo Editor */,
 			);
 			path = SelfieKeyboard;
 			sourceTree = "<group>";
@@ -96,6 +169,7 @@
 		4C0BBB3E1AA4F51C00BADD6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C80E6BC1AB245B3009B67A5 /* PrefixHeader.pch */,
 				4C0BBB3F1AA4F51C00BADD6B /* Info.plist */,
 				4C0BBB401AA4F51C00BADD6B /* main.m */,
 			);
@@ -117,6 +191,83 @@
 				4C0BBB591AA4F51C00BADD6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD0E0DB1AB44CF000AFA7F8 /* Photo Editor */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E0ED1AB44D3A00AFA7F8 /* GKImagePicker */,
+				4CD0E0DC1AB44CF000AFA7F8 /* EditorViewController.h */,
+				4CD0E0DD1AB44CF000AFA7F8 /* EditorViewController.m */,
+				4CD0E0DE1AB44CF000AFA7F8 /* EditorViewController.xib */,
+				4CD0E0E11AB44CF000AFA7F8 /* IQLabelView */,
+			);
+			path = "Photo Editor";
+			sourceTree = "<group>";
+		};
+		4CD0E0E11AB44CF000AFA7F8 /* IQLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E0E21AB44CF000AFA7F8 /* IQLabelView.bundle */,
+				4CD0E0E31AB44CF000AFA7F8 /* IQLabelView.h */,
+				4CD0E0E41AB44CF000AFA7F8 /* IQLabelView.m */,
+				4CD0E0E51AB44CF000AFA7F8 /* UITextField+DynamicFontSize.h */,
+				4CD0E0E61AB44CF000AFA7F8 /* UITextField+DynamicFontSize.m */,
+			);
+			path = IQLabelView;
+			sourceTree = "<group>";
+		};
+		4CD0E0ED1AB44D3A00AFA7F8 /* GKImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E0EE1AB44D3A00AFA7F8 /* GKImageCropper.h */,
+				4CD0E0EF1AB44D3A00AFA7F8 /* GKImageCropper.m */,
+				4CD0E0F01AB44D3A00AFA7F8 /* GKImagePicker.h */,
+				4CD0E0F11AB44D3A00AFA7F8 /* GKImagePicker.m */,
+				4CD0E0F21AB44D3A00AFA7F8 /* UIImage+ */,
+			);
+			path = GKImagePicker;
+			sourceTree = "<group>";
+		};
+		4CD0E0F21AB44D3A00AFA7F8 /* UIImage+ */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E0F31AB44D3A00AFA7F8 /* UIImage+Alpha.h */,
+				4CD0E0F41AB44D3A00AFA7F8 /* UIImage+Alpha.m */,
+				4CD0E0F51AB44D3A00AFA7F8 /* UIImage+FixOrientation.h */,
+				4CD0E0F61AB44D3A00AFA7F8 /* UIImage+FixOrientation.m */,
+				4CD0E0F71AB44D3A00AFA7F8 /* UIImage+Resize.h */,
+				4CD0E0F81AB44D3A00AFA7F8 /* UIImage+Resize.m */,
+				4CD0E0F91AB44D3A00AFA7F8 /* UIImage+Rotate.h */,
+				4CD0E0FA1AB44D3A00AFA7F8 /* UIImage+Rotate.m */,
+				4CD0E0FB1AB44D3A00AFA7F8 /* UIImage+RoundedCorner.h */,
+				4CD0E0FC1AB44D3A00AFA7F8 /* UIImage+RoundedCorner.m */,
+			);
+			path = "UIImage+";
+			sourceTree = "<group>";
+		};
+		4CD0E1041AB4D11100AFA7F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E1051AB4D12F00AFA7F8 /* KeyboardModel.h */,
+				4CD0E1061AB4D12F00AFA7F8 /* KeyboardModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4CD0E1081AB4D6DE00AFA7F8 /* RMMapper */ = {
+			isa = PBXGroup;
+			children = (
+				4CD0E1091AB4D6DE00AFA7F8 /* NSObject+RMArchivable.h */,
+				4CD0E10A1AB4D6DE00AFA7F8 /* NSObject+RMArchivable.m */,
+				4CD0E10B1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.h */,
+				4CD0E10C1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m */,
+				4CD0E10D1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.h */,
+				4CD0E10E1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m */,
+				4CD0E10F1AB4D6DE00AFA7F8 /* RMMapper.h */,
+				4CD0E1101AB4D6DE00AFA7F8 /* RMMapper.m */,
+			);
+			path = RMMapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +353,8 @@
 				4C0BBB4A1AA4F51C00BADD6B /* Main.storyboard in Resources */,
 				4C0BBB4F1AA4F51C00BADD6B /* LaunchScreen.xib in Resources */,
 				4C0BBB4C1AA4F51C00BADD6B /* Images.xcassets in Resources */,
+				4CD0E0E81AB44CF000AFA7F8 /* EditorViewController.xib in Resources */,
+				4CD0E0EA1AB44CF000AFA7F8 /* IQLabelView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +373,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0BBB471AA4F51C00BADD6B /* ViewController.m in Sources */,
+				4CD0E0FE1AB44D3A00AFA7F8 /* GKImagePicker.m in Sources */,
+				4CD0E1031AB44D3A00AFA7F8 /* UIImage+RoundedCorner.m in Sources */,
+				4CD0E0FD1AB44D3A00AFA7F8 /* GKImageCropper.m in Sources */,
 				4C0BBB441AA4F51C00BADD6B /* AppDelegate.m in Sources */,
 				4C0BBB411AA4F51C00BADD6B /* main.m in Sources */,
+				4CD0E1111AB4D6DE00AFA7F8 /* NSObject+RMArchivable.m in Sources */,
+				4C80E6BF1AB25003009B67A5 /* KeyboardEditViewController.m in Sources */,
+				4CD0E1021AB44D3A00AFA7F8 /* UIImage+Rotate.m in Sources */,
+				4C0BBB661AA4FDD000BADD6B /* keyboardListViewController.m in Sources */,
+				4CD0E0EC1AB44CF000AFA7F8 /* UITextField+DynamicFontSize.m in Sources */,
+				4C80E6BB1AB2434A009B67A5 /* Singleton.m in Sources */,
+				4CD0E0DA1AB31FC600AFA7F8 /* KeyboardCollectionViewCell.m in Sources */,
+				4CD0E1001AB44D3A00AFA7F8 /* UIImage+FixOrientation.m in Sources */,
+				4CD0E0E71AB44CF000AFA7F8 /* EditorViewController.m in Sources */,
+				4CD0E1131AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
+				4CD0E1071AB4D12F00AFA7F8 /* KeyboardModel.m in Sources */,
+				4CD0E0EB1AB44CF000AFA7F8 /* IQLabelView.m in Sources */,
+				4CD0E1121AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m in Sources */,
+				4CD0E1141AB4D6DE00AFA7F8 /* RMMapper.m in Sources */,
+				4CD0E0FF1AB44D3A00AFA7F8 /* UIImage+Alpha.m in Sources */,
+				4CD0E1011AB44D3A00AFA7F8 /* UIImage+Resize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = SelfieKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = SelfieKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +586,7 @@
 				4C0BBB601AA4F51C00BADD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C0BBB611AA4F51C00BADD6B /* Build configuration list for PBXNativeTarget "SelfieKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +595,7 @@
 				4C0BBB631AA4F51C00BADD6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
