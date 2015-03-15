@@ -35,6 +35,8 @@
 		4CD0E1121AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E10C1AB4D6DE00AFA7F8 /* NSObject+RMCopyable.m */; };
 		4CD0E1131AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E10E1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m */; };
 		4CD0E1141AB4D6DE00AFA7F8 /* RMMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0E1101AB4D6DE00AFA7F8 /* RMMapper.m */; };
+		4CF074CA1AB5017400350AB7 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF074C91AB5017400350AB7 /* KeyboardViewController.m */; };
+		4CF074CD1AB5017400350AB7 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4CF074C41AB5017400350AB7 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +47,28 @@
 			remoteGlobalIDString = 4C0BBB3A1AA4F51C00BADD6B;
 			remoteInfo = SelfieKeyboard;
 		};
+		4CF074CB1AB5017400350AB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0BBB331AA4F51C00BADD6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CF074C31AB5017400350AB7;
+			remoteInfo = Keyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4CF074D11AB5017400350AB7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4CF074CD1AB5017400350AB7 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C0BBB3B1AA4F51C00BADD6B /* SelfieKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfieKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +125,12 @@
 		4CD0E10E1AB4D6DE00AFA7F8 /* NSUserDefaults+RMSaveCustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+RMSaveCustomObject.m"; sourceTree = "<group>"; };
 		4CD0E10F1AB4D6DE00AFA7F8 /* RMMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapper.h; sourceTree = "<group>"; };
 		4CD0E1101AB4D6DE00AFA7F8 /* RMMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMapper.m; sourceTree = "<group>"; };
+		4CF074C41AB5017400350AB7 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF074C71AB5017400350AB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF074C81AB5017400350AB7 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		4CF074C91AB5017400350AB7 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		4CF074D21AB504F600350AB7 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		4CF074D31AB509C800350AB7 /* SelfieKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelfieKeyboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +148,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CF074C11AB5017400350AB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -127,6 +163,7 @@
 			children = (
 				4C0BBB3D1AA4F51C00BADD6B /* SelfieKeyboard */,
 				4C0BBB571AA4F51C00BADD6B /* SelfieKeyboardTests */,
+				4CF074C51AB5017400350AB7 /* Keyboard */,
 				4C0BBB3C1AA4F51C00BADD6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +173,7 @@
 			children = (
 				4C0BBB3B1AA4F51C00BADD6B /* SelfieKeyboard.app */,
 				4C0BBB541AA4F51C00BADD6B /* SelfieKeyboardTests.xctest */,
+				4CF074C41AB5017400350AB7 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +181,7 @@
 		4C0BBB3D1AA4F51C00BADD6B /* SelfieKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4CF074D31AB509C800350AB7 /* SelfieKeyboard.entitlements */,
 				4CD0E1081AB4D6DE00AFA7F8 /* RMMapper */,
 				4CD0E1041AB4D11100AFA7F8 /* Models */,
 				4C0BBB421AA4F51C00BADD6B /* AppDelegate.h */,
@@ -270,6 +309,25 @@
 			path = RMMapper;
 			sourceTree = "<group>";
 		};
+		4CF074C51AB5017400350AB7 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4CF074D21AB504F600350AB7 /* Keyboard.entitlements */,
+				4CF074C81AB5017400350AB7 /* KeyboardViewController.h */,
+				4CF074C91AB5017400350AB7 /* KeyboardViewController.m */,
+				4CF074C61AB5017400350AB7 /* Supporting Files */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		4CF074C61AB5017400350AB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CF074C71AB5017400350AB7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,10 +338,12 @@
 				4C0BBB371AA4F51C00BADD6B /* Sources */,
 				4C0BBB381AA4F51C00BADD6B /* Frameworks */,
 				4C0BBB391AA4F51C00BADD6B /* Resources */,
+				4CF074D11AB5017400350AB7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4CF074CC1AB5017400350AB7 /* PBXTargetDependency */,
 			);
 			name = SelfieKeyboard;
 			productName = SelfieKeyboard;
@@ -308,6 +368,23 @@
 			productReference = 4C0BBB541AA4F51C00BADD6B /* SelfieKeyboardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4CF074C31AB5017400350AB7 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CF074CE1AB5017400350AB7 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				4CF074C01AB5017400350AB7 /* Sources */,
+				4CF074C11AB5017400350AB7 /* Frameworks */,
+				4CF074C21AB5017400350AB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 4CF074C41AB5017400350AB7 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,10 +396,25 @@
 				TargetAttributes = {
 					4C0BBB3A1AA4F51C00BADD6B = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9KWDP2GA2A;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					4C0BBB531AA4F51C00BADD6B = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 4C0BBB3A1AA4F51C00BADD6B;
+					};
+					4CF074C31AB5017400350AB7 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 9KWDP2GA2A;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -341,6 +433,7 @@
 			targets = (
 				4C0BBB3A1AA4F51C00BADD6B /* SelfieKeyboard */,
 				4C0BBB531AA4F51C00BADD6B /* SelfieKeyboardTests */,
+				4CF074C31AB5017400350AB7 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -359,6 +452,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C0BBB521AA4F51C00BADD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CF074C21AB5017400350AB7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,6 +505,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4CF074C01AB5017400350AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CF074CA1AB5017400350AB7 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -412,6 +520,11 @@
 			isa = PBXTargetDependency;
 			target = 4C0BBB3A1AA4F51C00BADD6B /* SelfieKeyboard */;
 			targetProxy = 4C0BBB551AA4F51C00BADD6B /* PBXContainerItemProxy */;
+		};
+		4CF074CC1AB5017400350AB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CF074C31AB5017400350AB7 /* Keyboard */;
+			targetProxy = 4CF074CB1AB5017400350AB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -515,10 +628,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SelfieKeyboard/SelfieKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = SelfieKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -526,10 +643,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SelfieKeyboard/SelfieKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = SelfieKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -567,6 +688,38 @@
 			};
 			name = Release;
 		};
+		4CF074CF1AB5017400350AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4CF074D01AB5017400350AB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,6 +749,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4CF074CE1AB5017400350AB7 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF074CF1AB5017400350AB7 /* Debug */,
+				4CF074D01AB5017400350AB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

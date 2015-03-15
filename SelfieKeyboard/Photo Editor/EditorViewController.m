@@ -88,7 +88,7 @@
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                          NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *documentsDirectory = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.umutafacan.SelfieKeyboard"].path;
     NSString* path = [documentsDirectory stringByAppendingPathComponent:
                       name];
     UIImage* image = [UIImage imageWithContentsOfFile:path];
@@ -233,9 +233,9 @@
     
     NSData *imageData = UIImagePNGRepresentation([self visibleImage]);
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
-    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *documentsDirectory = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.umutafacan.SelfieKeyboard"].path;
     
     NSString *imagePath =[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.png",imageName]];
     
@@ -252,7 +252,7 @@
     }
     else
     {
-        NSLog((@"the cachedImagedPath is %@",imagePath));
+        NSLog((@"the cachedImagedPath is %@",(NSString *)imagePath));
     }
     
     [self.delegate saveThePhotoWithName:imageName id:_photoID indexPath:_indexPath];
